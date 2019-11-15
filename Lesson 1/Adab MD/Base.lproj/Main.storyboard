@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1LY-25-ON8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="WyQ-E4-fsR">
+            <objects>
+                <navigationController id="1LY-25-ON8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SDg-ED-BvJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vT0-59-pkg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cP8-w3-Cid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="136"/>
+        </scene>
+        <!--Habits-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adab_MD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="as-salaamu 'alaikum!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntI-KI-UCl">
+                                <rect key="frame" x="126.5" y="464.5" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ntI-KI-UCl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="H7C-RT-C5E"/>
+                            <constraint firstItem="ntI-KI-UCl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ptx-QA-dQM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Habits" id="Asu-Qu-Xzk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Uof-yL-afV">
+                            <connections>
+                                <segue destination="AaK-hB-Guo" kind="show" id="mFP-64-B6n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="71" y="136"/>
+        </scene>
+        <!--New habit-->
+        <scene sceneID="h7n-bp-Xe8">
+            <objects>
+                <viewController id="AaK-hB-Guo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ZI-jL-P4D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wa 'alaikumussalaam!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcB-SX-k0y">
+                                <rect key="frame" x="124.5" y="464.5" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DcB-SX-k0y" firstAttribute="centerY" secondItem="sQb-aa-R3c" secondAttribute="centerY" id="YWj-Ej-tqW"/>
+                            <constraint firstItem="DcB-SX-k0y" firstAttribute="centerX" secondItem="sQb-aa-R3c" secondAttribute="centerX" id="oGh-U5-U5M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sQb-aa-R3c"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New habit" id="fdg-ob-khJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t3m-OH-szG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="136"/>
+        </scene>
+    </scenes>
+</document>
